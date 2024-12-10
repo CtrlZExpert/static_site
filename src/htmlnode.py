@@ -47,7 +47,6 @@ class ParentNode(HTMLNode):
             raise ValueError("Invalid HTML: no tag")
         if self.children is None:
             raise ValueError("Invalid HTML: no children")
-
         children_html = ""
         for child in self.children:
             children_html += child.to_html()
